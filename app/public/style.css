@@ -1,0 +1,61 @@
+body{
+    margin: 0; /* La propiedad CSS margin establece el margen para los cuatro lados. */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Fuentes*/
+    display: flex; /*Para centrar todo*/
+    justify-content: center; /*Para poner contenido en el centro*/
+    align-items: center; /*controla la alineación de todos los elementos en el eje transversal.*/
+    min-height: 100svh; /*se utiliza para definir la altura mínima de un elemento dado.*/
+    font-size: large; /*especifica la dimensión de la letra.*/
+    background-color: rgb(42, 206, 206);
+}
+
+.form-container{
+    width: 500px; /*establece el ancho de un elemento.*/
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column; /*especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés).*/
+    gap: 10px /*el espacio entre filas y columnas dentro de la cuadrícula, flexión y diseño de múltiples columnas.*/
+    
+    
+}
+
+form+p, form p{
+    text-align: center;
+}
+
+.sr-only{
+    position: absolute; /*especifica cómo un elemento es posicionado en el documento. Las propiedades top , right , bottom , y left determinan la ubicación final de los elementos posicionados.*/
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; /*nos permite determinar lo que sucede con un elemento cuando su contenido sobrepasa los límites de su contenedor.*/
+}
+
+input, button{
+    border-radius: 4px; /*Para hacer bordes redonditos*/
+    border: unset; /*Para que no se vean los bordes*/
+    padding: 15px 30px; /*crea el espacio o área alrededor del contenido de un elemento. Consiste en el relleno superior, derecho, inferior e izquierdo.*/
+    font-size: large;
+}
+
+button{
+    background-color: rgb(185, 183, 180);
+    color: white; /*Cambia el color de la letra*/
+    font-weight: bold; /*Pone negrita*/
+    cursor: pointer; /*El curso a mostrar al estar sobre el elemento*/
+}
+
+.error{
+    color: rgb(233, 43, 43);
+    text-align: center;
+}
+
+.escondido{
+    display: none;
+}
